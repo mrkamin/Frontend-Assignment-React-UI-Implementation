@@ -1,0 +1,124 @@
+{
+  "data": {
+    "id": 1,
+    "totalVisits": 6300,
+    "totalSubscribers": 32,
+    "activeUsers": 20,
+    "totalClicks": 199,
+    "label": 583,
+    "months": {
+      "Jan": {
+        "userSignUp": 500,
+        "userSubscribed": 200
+      },
+      "Feb": {
+        "userSignUp": 600,
+        "userSubscribed": 220
+      },
+      "Mar": {
+        "userSignUp": 400,
+        "userSubscribed": 150
+      },
+      "Apr": {
+        "userSignUp": 700,
+        "userSubscribed": 200
+      },
+      "May": {
+        "userSignUp": 500,
+        "userSubscribed": 200
+      },
+      "Jun": {
+        "userSignUp": 600,
+        "userSubscribed": 220
+      },
+      "Jul": {
+        "userSignUp": 400,
+        "userSubscribed": 150
+      },
+      "Aug": {
+        "userSignUp": 700,
+        "userSubscribed": 200
+      },
+      "Sep": {
+        "userSignUp": 500,
+        "userSubscribed": 200
+      },
+      "Oct": {
+        "userSignUp": 600,
+        "userSubscribed": 220
+      },
+      "Nev": {
+        "userSignUp": 400,
+        "userSubscribed": 150
+      },
+      "Dec": {
+        "userSignUp": 700,
+        "userSubscribed": 200
+      }
+    },
+    "location": {
+      "mo": { "contry": 50, "city": 200 },
+      "Tu": { "contry": 50, "city": 200 },
+      "We": { "contry": 50, "city": 200 },
+      "Th": { "contry": 50, "city": 200 },
+      "Fr": { "contry": 50, "city": 200 },
+      "Sa": { "contry": 50, "city": 200 },
+      "Su": { "contry": 50, "city": 200 }
+    },
+    "conversionRate": {
+      "totalUserVisit": 3124213,
+      "userSignUp": 1523151,
+      "userSubscribed": 948213
+    },
+    "webSiteAnalytics": {
+      "Jan": {
+        "visits": 12569,
+        "sessions": 10500
+      },
+      "Feb": {
+        "visits": 9000,
+        "sessions": 8000
+      },
+      "Mar": {
+        "visits": 5000,
+        "sessions": 7000
+      },
+      "Apr": {
+        "visits": 4500,
+        "sessions": 3500
+      },
+      "May": {
+        "visits": 5050,
+        "sessions": 2800
+      },
+      "Jun": {
+        "visits": 6500,
+        "sessions": 2620
+      },
+      "Jul": {
+        "visits": 4070,
+        "sessions": 1850
+      },
+      "Aug": {
+        "visits": 7900,
+        "sessions": 2900
+      },
+      "Sep": {
+        "visits": 5000,
+        "sessions": 4000
+      },
+      "Oct": {
+        "visits": 6000,
+        "sessions": 11220
+      },
+      "Nev": {
+        "visits": 4000,
+        "sessions": 15000
+      },
+      "Dec": {
+        "visits": 7000,
+        "sessions": 2000
+      }
+    }
+  }
+}
