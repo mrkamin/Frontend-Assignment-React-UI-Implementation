@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 :root {
-  --bg-color: #231e48;
-  --total-visit-color: #3f46f7;
+  --bg-color: #060B27;
+  --linear: #2F014C;
+  --total-visit-color: #3F46F7;
   --total-sub-color: #fe8743;
   --active-user-color: #00c543;
   --total-click-color: #8923d9;
@@ -17,4 +18,8 @@
 
 body {
   font-family: var(--ff);
+  background-image: linear-gradient(to right, #060B27, #2F014C );
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
