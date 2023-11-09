@@ -1,36 +1,28 @@
-import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import fetchData from './redux/action/action';
+import { useSelector, useDispatch } from 'react-redux';
+import Navbar from './components/Navbar';
 
 const App = () => {
+  const counter = useSelector((state) => state.counter);
   const dispatch = useDispatch();
-  const { data, loading, error } = useSelector((state) => state);
 
-  useEffect(() => {
-    dispatch(fetchData());
-  }, [dispatch]);
-
-  if (loading) {
-    return <div>Loading...</div>;
-  }
-
-  if (error) {
-    return (
-      <div>
-        Error:
-        {error}
-      </div>
-    );
-  }
+  const increment = () => {
+    dispatch({ type: 'INC' });
+  };
+  const decrement = () => {
+    dispatch({ type: 'DEC' });
+  };
 
   return (
     <div>
-      {/* Render your components using the data from the Redux store */}
-      {/* Example: */}
-      <h1>
-        Total Visits:
-        {data.totalVisits}
-      </h1>
+      <Navbar />
+      <h1>Counter App</h1>
+      <h2>{counter}</h2>
+      <button type="button" onClick={increment}>
+        Increment
+      </button>
+      <button type="button" onClick={decrement}>
+        Decrement
+      </button>
     </div>
   );
 };
