@@ -12,6 +12,10 @@ const App = () => {
     dispatch({ type: 'DEC' });
   };
 
+  const add = () => {
+    dispatch({ type: 'ADD', payload: 10 });
+  };
+
   return (
     <div>
       <Navbar />
@@ -23,6 +27,7 @@ const App = () => {
       <button type="button" onClick={decrement}>
         Decrement
       </button>
+      <button type="button" onClick={add}>Add by 10</button>
     </div>
   );
 };
