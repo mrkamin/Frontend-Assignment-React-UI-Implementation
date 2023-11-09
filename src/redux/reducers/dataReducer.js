@@ -1,11 +1,11 @@
-import ActionTypes from "../actionTypes/dataActionTypes";
+import ActionTypes from '../actionTypes/dataActionTypes';
 
 const initialState = {
   data: [
     {
       id: 1,
-      title: "Rafi",
-      category: "programmer",
+      title: 'Rafi',
+      category: 'programmer',
     },
   ],
 };
