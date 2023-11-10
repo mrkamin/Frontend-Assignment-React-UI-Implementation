@@ -1,0 +1,114 @@
+.hero-container {
+    height: 40vh;
+    padding: 5px 32px;
+    gap: 32px;
+}
+
+.hero-container-left-side {
+    gap: 1rem;
+}
+/* Hero container left side */
+.total-visits {
+    background-color: #181a3b86;
+    align-items:baseline;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-shadow: -3px -3px 0 0 #1d2b4b;
+    border: 1 solid;
+    border-radius: 1rem;
+}
+
+.total-visits-first-item {
+    align-items:flex-end;
+    gap: 1rem;
+}
+
+.total-visit-first-item-item-one{
+    background-color:#fff;
+    border: none;
+    border-radius: 0.5rem;
+    width: 3rem;
+    height: 3rem;
+    overflow: visible;
+}
+
+.total-visit-first-item-item-one path {
+    color:  #3F46F7;
+}
+
+.total-visit-first-item-item-two {
+    align-items:start;
+    justify-content: baseline;
+    padding: 0;
+    margin: 0;   
+}
+.total-visit-first-item-item-two p {
+    padding: 0;
+    margin: 0;
+    
+}
+.total-visit-first-item-item-two h3 {
+    padding: 0;
+    margin: 0;
+    
+}
+
+.total-visits-second-item {
+    color: #00CA65;
+    background-color:#02b1592f;
+    padding: 0.2rem 1rem;
+    border: none;
+    border-radius: 1rem;
+}
+
+.total-sub-first-item-item-one{
+    background-color:#fff;
+    border: none;
+    border-radius: 0.5rem;
+    width: 3rem;
+    height: 3rem;
+    overflow: visible;
+}
+.total-sub-first-item-item-one path {
+    color:  #fe8743;
+}
+
+.total-sub-second-item {
+    color: #E41414;
+    background-color:#e8001b25;
+    padding: 0.2rem 1rem;
+    border: none;
+    border-radius: 1rem;
+}
+
+.total-active-first-item-item-one{
+    background-color:#00C543;
+    border: none;
+    border-radius: 0.5rem;
+    width: 3rem;
+    height: 3rem;
+    overflow: visible;
+    padding: 0.8rem;
+}
+
+.total-click-first-item-item-one{
+    background-color:#8923D9;
+    border: none;
+    border-radius: 0.5rem;
+    width: 3rem;
+    height: 3rem;
+    overflow: visible;
+    padding: 0.8rem;
+}
+
+/* Hero contariner Right side */
+
+.hero-container-right-side {
+    background-color: #181a3b83;
+    align-items:baseline;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-shadow: -3px -3px 0 0 #1d2b4b;
+    border: 1 solid;
+    border-radius: 1rem;
+}
