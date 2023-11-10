@@ -1,16 +1,7 @@
-import { createStore } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk';
+import reducer from './data/reducer';
 
-const reducerfu = (state = { counter: 0 }, action) => {
-  if (action.type === 'INC') {
-    return { counter: state.counter + 1 };
-  } if (action.type === 'DEC') {
-    return { counter: state.counter - 1 };
-  } if (action.type === 'ADD') {
-    return { counter: state.counter + action.payload };
-  }
+const store = createStore(reducer, applyMiddleware(thunk));
 
-  return state;
-};
-
-const store = createStore(reducerfu);
 export default store;
