@@ -16,10 +16,16 @@
   box-sizing: border-box;
 }
 
-/* body {
+body {
   font-family: var(--ff);
   background-image: linear-gradient(to right, #060B27, #2F014C );
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-} */
+  color: #fff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
