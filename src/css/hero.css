@@ -7,6 +7,15 @@
 .hero-container-left-side {
     gap: 1rem;
 }
+
+.white-dark {
+    color: #AEBBDA !important;
+}
+
+.svg {
+    width: 100%;
+    height: 40vh;
+}
 /* Hero container left side */
 .total-visits {
     background-color: #181a3b86;
@@ -106,9 +115,28 @@
 .hero-container-right-side {
     background-color: #181a3b83;
     align-items:baseline;
-    justify-content: space-between;
     padding: 10px 20px;
     box-shadow: -3px -3px 0 0 #1d2b4b;
     border: 1 solid;
     border-radius: 1rem;
+}
+
+.right-side-uper-head {
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+.uper-head-left-side {
+    gap: 32px;
+    
+}
+
+.left-side-first-item {
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.right-side-body {
+    width: 100%;
 }
