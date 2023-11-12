@@ -35,6 +35,11 @@ body {
   grid-template-columns: 33% 33% 33%;
 }
 
+.grid2 {
+  display: grid;
+  grid-template-columns: 49% 49%;
+}
+
 .svg {
   height: 30vh !important;
 }
