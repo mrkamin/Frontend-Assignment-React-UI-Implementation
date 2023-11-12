@@ -108,7 +108,7 @@ const Hero = () => {
             </div>
           </div>
           <div className="right-side-body">
-            <Svg />
+            <Svg data={data} />
           </div>
         </div>
       </div>

@@ -8,52 +8,52 @@
     "label": 583,
     "months": {
       "Jan": {
-        "userSignUp": 500,
-        "userSubscribed": 200
+        "userSignUp": 40,
+        "userSubscribed": 30
       },
       "Feb": {
-        "userSignUp": 600,
-        "userSubscribed": 220
+        "userSignUp": 20,
+        "userSubscribed": 10
       },
       "Mar": {
-        "userSignUp": 400,
-        "userSubscribed": 150
+        "userSignUp": 35,
+        "userSubscribed": 10
       },
       "Apr": {
-        "userSignUp": 700,
-        "userSubscribed": 200
+        "userSignUp": -10,
+        "userSubscribed": -30
       },
       "May": {
-        "userSignUp": 500,
-        "userSubscribed": 200
+        "userSignUp": -20,
+        "userSubscribed": -30
       },
       "Jun": {
-        "userSignUp": 600,
-        "userSubscribed": 220
+        "userSignUp": 25,
+        "userSubscribed": 15
       },
       "Jul": {
-        "userSignUp": 400,
-        "userSubscribed": 150
+        "userSignUp": 30,
+        "userSubscribed": 9
       },
       "Aug": {
-        "userSignUp": 700,
-        "userSubscribed": 200
+        "userSignUp": -10,
+        "userSubscribed": -20
       },
       "Sep": {
-        "userSignUp": 500,
-        "userSubscribed": 200
+        "userSignUp": -12,
+        "userSubscribed": -22
       },
       "Oct": {
-        "userSignUp": 600,
-        "userSubscribed": 220
+        "userSignUp": 16,
+        "userSubscribed": 20
       },
       "Nev": {
-        "userSignUp": 400,
-        "userSubscribed": 150
+        "userSignUp": 40,
+        "userSubscribed": 30
       },
       "Dec": {
-        "userSignUp": 700,
-        "userSubscribed": 200
+        "userSignUp": -10,
+        "userSubscribed": -20
       }
     },
     "location": {
