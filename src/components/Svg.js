@@ -17,7 +17,7 @@ const Svg = ({ data }) => {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       className="svg"
-      viewBox="0 0 100 27"
+      viewBox="0 0 100 21"
     >
       <rect x="8.2%" y="46%" width="3%" height="36%" fill="#0082CC" />
       <rect x="8.7%" y="46%" width="2%" height="28%" fill="#FB4540" />

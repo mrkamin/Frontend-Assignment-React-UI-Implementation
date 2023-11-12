@@ -29,7 +29,7 @@ const Hero = () => {
   }
   return (
     <>
-      <div className=" hero-container grid ">
+      <div className=" hero-container grid">
         <div className="hero-container-left-side d-flex flex-column">
           <div className="total-visits d-flex">
             <div className="total-visits-first-item d-flex">
@@ -45,7 +45,7 @@ const Hero = () => {
             <div className="total-visits-first-item d-flex">
               <BsFillArrowUpRightSquareFill className="total-sub-first-item-item-one" />
               <div className="total-visit-first-item-item-two d-flex flex-column ">
-                <p className="white-dark">Total Subscribers</p>
+                <p className="white-dark">Total Sub</p>
                 <h3>{data.totalSubscribers}</h3>
               </div>
             </div>

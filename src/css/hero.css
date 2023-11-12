@@ -17,7 +17,7 @@
     background-color: #181a3b86;
     align-items:baseline;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 0 20px;
     box-shadow: -3px -3px 0 0 #1d2b4b;
     border: 1 solid;
     border-radius: 1rem;
@@ -110,22 +110,20 @@
 
 .hero-container-right-side {
     background-color: #181a3b83;
-    align-items:baseline;
     padding: 10px 20px;
     box-shadow: -3px -3px 0 0 #1d2b4b;
-    border: 1 solid;
+    border: none;
     border-radius: 1rem;
+    overflow: hidden;
 }
 
 .right-side-uper-head {
     justify-content: space-between;
     width: 100%;
-    
 }
 
 .uper-head-left-side {
     gap: 32px;
-    
 }
 
 .left-side-first-item {
