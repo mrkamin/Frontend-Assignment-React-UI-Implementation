@@ -29,3 +29,17 @@ body {
   display: grid;
   grid-template-columns: 20% 78%;
 }
+
+.grid1 {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+
+.svg {
+  height: 30vh !important;
+}
+
+.footer {
+  padding: 16px 32px ;
+  gap: 16px;
+}
