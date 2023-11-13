@@ -55,3 +55,27 @@ body {
   z-index: 10;
   top: 0;
 }
+
+.white-dark {
+  color: #AEBBDA !important;
+}
+
+.paragraph {
+  background-color: #290C51;
+  align-items: center !important;
+  gap: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  justify-content: center;
+  padding: 0.1rem;
+}
+
+.active {
+  background-color:#060b2760 ;
+  border-radius: 0.3rem;
+}
+
+.p {
+  padding: 0.5rem;
+  margin: 0 !important;
+}

@@ -1,41 +1,57 @@
-import React from 'react';
-import SvgLocation from './SvgLocation';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import {
+  BsFillArrowDownLeftSquareFill,
+  BsFillArrowUpRightSquareFill,
+} from 'react-icons/bs';
+import { fetchData } from '../redux/data/actions';
+import SvgWebSiteAnalytics from './SvgWebSiteAnalytics';
 
-const WebsiteAnalytics = () => (
-  <div className="hero-container-right-side d-flex flex-column">
-    <div className="right-side-uper-head d-flex">
-      <div className="uper-head-right-side">
-        <h4>Location</h4>
+const WebsiteAnalytics = () => {
+  const dispatch = useDispatch();
+  const { data, loading, error } = useSelector((state) => state);
+  useEffect(() => {
+    dispatch(fetchData());
+  }, [dispatch]);
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+  if (error) {
+    return (
+      <div>
+        Error:
+        {error}
       </div>
-      <div className="uper-head-left-side d-flex">
-        <div className="left-side-first-item d-flex">
-          <svg
-            width="20"
-            height="20"
-            xmlns="http://www.w3.org/2000/svg"
-            className=""
-          >
-            <circle cx="10" cy="10" r="5" fill="#00F2DE" />
-          </svg>
-          <div className="white-dark">Country</div>
+    );
+  }
+  return (
+    <div className="hero-container-right-side d-flex flex-column">
+      <div className="right-side-uper-head d-flex">
+        <div className="uper-head-right-side">
+          <h4>Website Analytics</h4>
+          <p className="white-dark">Based on your performance</p>
+          <div className="d-flex paragraph">
+            <p className="white-dark p">Weekly</p>
+            <p className="white-dark p active">Monthly</p>
+            <p className="white-dark p">Yearly</p>
+          </div>
         </div>
-        <div className="left-side-first-item d-flex">
-          <svg
-            width="20"
-            height="20"
-            xmlns="http://www.w3.org/2000/svg"
-            className=""
-          >
-            <circle cx="10" cy="10" r="5" fill="#FB4540" />
-          </svg>
-          <div className="white-dark">City</div>
+        <div className="d-flex gap-5">
+          <div className="total-visits-first-item d-flex">
+            <BsFillArrowDownLeftSquareFill className="" />
+            <p>Visits</p>
+          </div>
+          <div className="total-visits-first-item d-flex">
+            <BsFillArrowUpRightSquareFill className="" />
+            <p>Sessions</p>
+          </div>
         </div>
+      </div>
+      <div className="right-side-body">
+        <SvgWebSiteAnalytics data={data} />
       </div>
     </div>
-    <div className="right-side-body">
-      <SvgLocation />
-    </div>
-  </div>
-);
+  );
+};
 
 export default WebsiteAnalytics;

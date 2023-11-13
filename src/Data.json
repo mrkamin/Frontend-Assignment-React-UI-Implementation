@@ -1,7 +1,7 @@
 {
   "data": {
     "id": 1,
-    "totalVisits": 6300,
+    "totalVisits": 0,
     "totalSubscribers": 32,
     "activeUsers": 20,
     "totalClicks": 199,
@@ -71,52 +71,20 @@
 
     "webSiteAnalytics": {
       "Jan": {
-        "visits": 12569,
-        "sessions": 10500
+        "visits": 1,
+        "sessions": 20
       },
       "Feb": {
-        "visits": 9000,
-        "sessions": 8000
+        "visits": 5,
+        "sessions": 5
       },
       "Mar": {
-        "visits": 5000,
-        "sessions": 7000
+        "visits": -10,
+        "sessions": -20
       },
       "Apr": {
-        "visits": 4500,
-        "sessions": 3500
-      },
-      "May": {
-        "visits": 5050,
-        "sessions": 2800
-      },
-      "Jun": {
-        "visits": 6500,
-        "sessions": 2620
-      },
-      "Jul": {
-        "visits": 4070,
-        "sessions": 1850
-      },
-      "Aug": {
-        "visits": 7900,
-        "sessions": 2900
-      },
-      "Sep": {
-        "visits": 5000,
-        "sessions": 4000
-      },
-      "Oct": {
-        "visits": 6000,
-        "sessions": 11220
-      },
-      "Nev": {
-        "visits": 4000,
-        "sessions": 15000
-      },
-      "Dec": {
-        "visits": 7000,
-        "sessions": 2000
+        "visits": -20,
+        "sessions": -30
       }
     }
   }

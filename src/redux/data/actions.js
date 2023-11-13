@@ -15,7 +15,7 @@ export const fetchDataFailure = (error) => ({
 export const fetchData = () => (dispatch) => {
   dispatch(fetchDataReauest());
   axios
-    .get('https://mocki.io/v1/2c247a3c-8b49-4853-8a0c-a025af57fb99')
+    .get('https://mocki.io/v1/cfda4fde-0e85-4985-9446-9236faff71d7')
     .then((response) => {
       dispatch(fetchDataSuccess(response.data.data));
     })
