@@ -26,9 +26,11 @@ const ConversionRate = () => {
       </div>
     );
   }
-  const { userVisit, userSignUp, userSubscribed } = data;
+  const {
+    userVisit, userSignUp, userSubscribed, label,
+  } = data;
   return (
-    <div className="hero-container-right-side d-flex flex-column">
+    <div className="hero-container-right-side d-flex flex-column position-relative">
       <div className="right-side-uper-head d-flex">
         <div className="uper-head-right-side">
           <h4>Conversion Rate</h4>
@@ -39,6 +41,7 @@ const ConversionRate = () => {
           userVisit={userVisit}
           userSignUp={userSignUp}
           userSubscribed={userSubscribed}
+          label={label}
         />
         <div className="d-flex flex-column gap-4">
           <div className="d-flex gap-3">

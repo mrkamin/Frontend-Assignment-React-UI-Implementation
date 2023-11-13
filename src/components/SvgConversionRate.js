@@ -1,49 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// {
-//   userVisit,
-//   userSignUp,
-//   userSubscribed,
-// }
-// const total = userVisit + userSignUp + userSubscribed;
-// const visitPercentage = (userVisit / total) * 100;
-// const signUpPercentage = (userSignUp / total) * 100;
-// const subscribedPercentage = (userSubscribed / total) * 100;
 
-// const visitEndX = 50 + Math.cos((visitPercentage * 3.6 - 90) * (Math.PI / 180)) * 40;
-// const visitEndY = 50 + Math.sin((visitPercentage * 3.6 - 90) * (Math.PI / 180)) * 40;
-
-// const signUpEndX = 50
-//   + Math.cos(
-//     ((visitPercentage + signUpPercentage) * 3.6 - 90) * (Math.PI / 180),
-//   )
-//     * 40;
-// const signUpEndY = 50
-//   + Math.sin(
-//     ((visitPercentage + signUpPercentage) * 3.6 - 90) * (Math.PI / 180),
-//   )
-//     * 40;
-
-// const subscribedEndX = 50
-//   + Math.cos(
-//     ((visitPercentage + signUpPercentage + subscribedPercentage) * 3.6 - 90)
-//       * (Math.PI / 180),
-//   )
-//     * 40;
-// const subscribedEndY = 50
-//   + Math.sin(
-//     ((visitPercentage + signUpPercentage + subscribedPercentage) * 3.6 - 90)
-//       * (Math.PI / 180),
-//   )
-//     * 40;
-
-export const SvgConverrsionRate = ({ userVisit, userSignUp, userSubscribed }) => {
+export const SvgConverrsionRate = ({
+  userVisit, userSignUp, userSubscribed, label,
+}) => {
   const total = userVisit + userSignUp + userSubscribed;
 
   // Calculate percentage for each section of the circle
   const visitPercentage = (userVisit / total) * 100;
   const signUpPercentage = (userSignUp / total) * 100;
   const subscribedPercentage = (userSubscribed / total) * 100;
+  const centerX = 50;
+  const centerY = 50;
 
   return (
     <svg
@@ -86,6 +54,11 @@ export const SvgConverrsionRate = ({ userVisit, userSignUp, userSubscribed }) =>
         strokeWidth="8"
         strokeDasharray={`${subscribedPercentage * 4.5} ${360 - subscribedPercentage * 4.5}`}
       />
+      {/* Label */}
+      <text x={centerX} y={centerY} textAnchor="middle" dominantBaseline="middle" fill="#FFFFFF">
+        <tspan fontSize="12">{label}</tspan>
+        <tspan x={centerX} dy="1.2em" fontSize="8" fill="#666">Label</tspan>
+      </text>
     </svg>
   );
 };
@@ -125,4 +98,5 @@ SvgConverrsionRate.propTypes = {
   userVisit: PropTypes.number.isRequired,
   userSignUp: PropTypes.number.isRequired,
   userSubscribed: PropTypes.number.isRequired,
+  label: PropTypes.number.isRequired,
 };

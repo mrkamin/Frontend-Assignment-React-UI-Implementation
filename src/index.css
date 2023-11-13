@@ -37,7 +37,9 @@ body {
 
 .grid2 {
   display: grid;
-  grid-template-columns: 49% 49%;
+  grid-template-columns: 54% 44%;
+  gap: 1rem;
+  align-items: center;
 }
 
 .svg {
@@ -47,4 +49,9 @@ body {
 .footer {
   padding: 16px 32px ;
   gap: 16px;
+}
+
+.label {
+  z-index: 10;
+  top: 0;
 }
