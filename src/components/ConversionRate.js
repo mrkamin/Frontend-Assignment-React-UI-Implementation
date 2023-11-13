@@ -20,7 +20,7 @@ const ConversionRate = () => {
       </div>
     );
   }
-  console.log('show data', data.conversionRate.userVisit);
+  console.log('show data', data.conversionRate);
   return (
     <div className="hero-container-right-side d-flex flex-column">
       <div className="right-side-uper-head d-flex">
@@ -34,16 +34,16 @@ const ConversionRate = () => {
           <div className="d-flex">
             <div>
               <h5>Total User Visit</h5>
-              <p>{data.conversionRate.userVisit}</p>
+              <p>665</p>
             </div>
           </div>
           <div>
             <h5>Total User Visit</h5>
-            <p>{data.conversionRate.userSubscribed}</p>
+            <p>656</p>
           </div>
           <div>
             <h5>Total User Visit</h5>
-            <p>{data.conversionRate.userVisit}</p>
+            <p>655</p>
           </div>
         </div>
       </div>
