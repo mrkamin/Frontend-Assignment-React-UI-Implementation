@@ -66,7 +66,7 @@
       "Su": { "contry": 50, "city": 200 }
     },
     "conversionRate": {
-      "totalUserVisit": 3124213,
+      "userVisit": 3124213,
       "userSignUp": 1523151,
       "userSubscribed": 948213
     },

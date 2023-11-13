@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchData } from '../redux/data/actions';
-import SvgConverrsionRate from './SvgConversionRate';
+import { SvgConverrsionRate } from './SvgConversionRate';
 
 const ConversionRate = () => {
   const dispatch = useDispatch();
@@ -20,7 +20,7 @@ const ConversionRate = () => {
       </div>
     );
   }
-  console.log('show data', data.conversionRate.totalUserVisit);
+  console.log('show data', data.conversionRate.userVisit);
   return (
     <div className="hero-container-right-side d-flex flex-column">
       <div className="right-side-uper-head d-flex">
@@ -31,17 +31,19 @@ const ConversionRate = () => {
       <div className="right-side-body grid2">
         <SvgConverrsionRate />
         <div>
-          <div>
-            <h5>Total User Visit</h5>
-            <p>{data.conversionRate.userSignUp}</p>
-          </div>
-          <div>
-            <h5>Total User Visit</h5>
-            <p>{data.conversionRate.totalUserVisit}</p>
+          <div className="d-flex">
+            <div>
+              <h5>Total User Visit</h5>
+              <p>{data.conversionRate.userVisit}</p>
+            </div>
           </div>
           <div>
             <h5>Total User Visit</h5>
             <p>{data.conversionRate.userSubscribed}</p>
+          </div>
+          <div>
+            <h5>Total User Visit</h5>
+            <p>{data.conversionRate.userVisit}</p>
           </div>
         </div>
       </div>
