@@ -2,8 +2,7 @@ import PropTypes from 'prop-types';
 
 const Svg = ({ data }) => {
   if (!data || !data.months) {
-    console.error('Data or data.months is undefined or null');
-    return null; // or some default content or a loading indicator
+    return null;
   }
   const months = Object.keys(data.months);
   const calculateXcoordinate = (index) => `${index * 8 + 9.5}%`;
