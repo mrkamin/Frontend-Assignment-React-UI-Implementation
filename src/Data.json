@@ -6,6 +6,9 @@
     "activeUsers": 20,
     "totalClicks": 199,
     "label": 583,
+    "userVisit": 3124213,
+    "userSignUp": 1523151,
+    "userSubscribed": 948213,
     "months": {
       "Jan": {
         "userSignUp": 40,
@@ -65,11 +68,7 @@
       "Sa": { "contry": 50, "city": 200 },
       "Su": { "contry": 50, "city": 200 }
     },
-    "conversionRate": {
-      "userVisit": 3124213,
-      "userSignUp": 1523151,
-      "userSubscribed": 948213
-    },
+
     "webSiteAnalytics": {
       "Jan": {
         "visits": 12569,

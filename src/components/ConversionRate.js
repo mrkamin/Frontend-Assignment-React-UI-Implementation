@@ -1,7 +1,13 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchData } from '../redux/data/actions';
-import { SvgConverrsionRate } from './SvgConversionRate';
+import {
+  SvgConverrsionRate,
+  SvgConverrsionRate1,
+  SvgConverrsionRate2,
+  SvgConverrsionRate3,
+} from './SvgConversionRate';
+import '../css/conversion.css';
 
 const ConversionRate = () => {
   const dispatch = useDispatch();
@@ -20,7 +26,7 @@ const ConversionRate = () => {
       </div>
     );
   }
-  console.log('show data', data.conversionRate);
+  const { userVisit, userSignUp, userSubscribed } = data;
   return (
     <div className="hero-container-right-side d-flex flex-column">
       <div className="right-side-uper-head d-flex">
@@ -29,21 +35,44 @@ const ConversionRate = () => {
         </div>
       </div>
       <div className="right-side-body grid2">
-        <SvgConverrsionRate />
-        <div>
-          <div className="d-flex">
-            <div>
-              <h5>Total User Visit</h5>
-              <p>665</p>
+        <SvgConverrsionRate
+          userVisit={userVisit}
+          userSignUp={userSignUp}
+          userSubscribed={userSubscribed}
+        />
+        <div className="d-flex flex-column gap-4">
+          <div className="d-flex gap-3">
+            <SvgConverrsionRate1 />
+            <div className="conversion-user-visit d-flex flex-column">
+              <h6>Total User Visit</h6>
+              <h5>
+                {data.userVisit}
+                {' '}
+                users
+              </h5>
             </div>
           </div>
-          <div>
-            <h5>Total User Visit</h5>
-            <p>656</p>
+          <div className="d-flex gap-3">
+            <SvgConverrsionRate2 />
+            <div className="conversion-user-visit d-flex flex-column">
+              <h6>User Sign Up</h6>
+              <h5>
+                {data.userSignUp}
+                {' '}
+                users
+              </h5>
+            </div>
           </div>
-          <div>
-            <h5>Total User Visit</h5>
-            <p>655</p>
+          <div className="d-flex gap-3">
+            <SvgConverrsionRate3 />
+            <div className="conversion-user-visit d-flex flex-column">
+              <h6>User Subscribed</h6>
+              <h5>
+                {data.userSubscribed}
+                {' '}
+                users
+              </h5>
+            </div>
           </div>
         </div>
       </div>
