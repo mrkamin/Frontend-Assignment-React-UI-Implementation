@@ -104,7 +104,7 @@ const Hero = () => {
         </div>
 
         {/* Right side of the hero container */}
-        <div className="hero-container-right-side d-flex flex-column">
+        <div className="hero-container-right-side d-flex flex-column gap-4">
           {/* Upper header section */}
           <div className="right-side-uper-head d-flex">
             <div className="uper-head-right-side">
@@ -120,7 +120,7 @@ const Hero = () => {
                   className=""
                 >
                   <path
-                    d="M 0 0 L 20 0 L 20 20 L 0 20 Z"
+                    d="M 0 0 L 20 0 Q 20 0 20 20 L 20 20 L 0 20 Z"
                     stroke="black"
                     fill="#0082CC"
                   />
@@ -135,7 +135,7 @@ const Hero = () => {
                   className=""
                 >
                   <path
-                    d="M 0 0 L 20 0 L 20 20 L 0 20 Z"
+                    d="M 0 0 L 20 0 Q 20 0 20 20 L 20 20 L 0 20 Z"
                     stroke="black"
                     fill="#FB4540"
                   />

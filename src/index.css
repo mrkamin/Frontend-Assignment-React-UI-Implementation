@@ -30,7 +30,7 @@ body {
 /* Define grid styles for layout */
 .grid {
   display: grid;
-  grid-template-columns: 20% 78%;
+  grid-template-columns: 25% 74%;
 }
 
 .grid1 {
