@@ -2,127 +2,238 @@ const SvgLocation = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     className="svg"
-    viewBox="0 0 100 21"
   >
     <line
-      x1="5%"
+      x1="6%"
       y1="5%"
-      x2="5%"
+      x2="6%"
       y2="80%"
       stroke="#AEBBDA"
-      strokeDasharray="0.3"
-      strokeWidth="0.02"
+      strokeDasharray="5"
+      strokeWidth="0.5"
     />
     <line
-      x1="11%"
+      x1="21%"
       y1="5%"
-      x2="11%"
+      x2="21%"
       y2="80%"
       stroke="#AEBBDA"
-      strokeDasharray="0.3"
-      strokeWidth="0.02"
+      strokeDasharray="5"
+      strokeWidth="0.5"
     />
     <line
-      x1="17%"
+      x1="36%"
       y1="5%"
-      x2="17%"
+      x2="36%"
       y2="80%"
       stroke="#AEBBDA"
-      strokeDasharray="0.3"
-      strokeWidth="0.02"
+      strokeDasharray="5"
+      strokeWidth="0.5"
     />
     <line
-      x1="23%"
+      x1="51%"
       y1="5%"
-      x2="23%"
+      x2="51%"
       y2="80%"
       stroke="#AEBBDA"
-      strokeDasharray="0.3"
-      strokeWidth="0.02"
+      strokeDasharray="5"
+      strokeWidth="0.5"
     />
     <line
-      x1="29%"
+      x1="66%"
       y1="5%"
-      x2="29%"
+      x2="66%"
       y2="80%"
       stroke="#AEBBDA"
-      strokeDasharray="0.3"
-      strokeWidth="0.02"
+      strokeDasharray="5"
+      strokeWidth="0.5"
     />
     <line
-      x1="35%"
+      x1="81%"
       y1="5%"
-      x2="35%"
+      x2="81%"
       y2="80%"
       stroke="#AEBBDA"
-      strokeDasharray="0.3"
-      strokeWidth="0.02"
+      strokeDasharray="5"
+      strokeWidth="0.5"
     />
     <line
-      x1="41%"
+      x1="96%"
       y1="5%"
-      x2="41%"
+      x2="96%"
       y2="80%"
       stroke="#AEBBDA"
-      strokeDasharray="0.3"
-      strokeWidth="0.02"
+      strokeDasharray="5"
+      strokeWidth="0.5"
     />
     <line
-      x1="4%"
+      x1="6%"
       y1="88%"
-      x2="43%"
+      x2="96%"
       y2="88%"
       stroke="#AEBBDA"
-      strokeWidth="0.02"
+      strokeWidth="0.5"
     />
-    <rect x="4.5%" y="46%" width="1%" height="42%" fill="#00F2DE" />
-    <rect x="4.5%" y="65%" width="1%" height="23%" fill="#FB4540" />
-    <rect x="10.5%" y="35%" width="1%" height="52.7%" fill="#00F2DE" />
-    <rect x="10.5%" y="60%" width="1%" height="28%" fill="#FB4540" />
-    <rect x="16.5%" y="25%" width="1%" height="62.7%" fill="#00F2DE" />
-    <rect x="16.5%" y="55%" width="1%" height="33%" fill="#FB4540" />
-    <rect x="22.5%" y="15%" width="1%" height="73%" fill="#00F2DE" />
-    <rect x="22.5%" y="50%" width="1%" height="38%" fill="#FB4540" />
-    <rect x="28.5%" y="15%" width="1%" height="73%" fill="#00F2DE" />
-    <rect x="28.5%" y="45%" width="1%" height="43%" fill="#FB4540" />
-    <rect x="34.5%" y="25%" width="1%" height="62.7%" fill="#00F2DE" />
-    <rect x="34.5%" y="50%" width="1%" height="38%" fill="#FB4540" />
-    <rect x="40.5%" y="46%" width="1%" height="42%" fill="#00F2DE" />
-    <rect x="40.5%" y="65%" width="1%" height="23%" fill="#FB4540" />
+    <rect
+      x="5.5%"
+      y="46%"
+      width="1%"
+      height="42%"
+      fill="#00F2DE"
+      rx="5"
+      ry="5"
+    />
+    <rect
+      x="5.5%"
+      y="65%"
+      width="1%"
+      height="23%"
+      fill="#FB4540"
+      rx="5"
+      ry="5"
+    />
+    <rect
+      x="20.5%"
+      y="35%"
+      width="1%"
+      height="52.7%"
+      fill="#00F2DE"
+      rx="5"
+      ry="5"
+    />
+    <rect
+      x="20.5%"
+      y="60%"
+      width="1%"
+      height="28%"
+      fill="#FB4540"
+      rx="5"
+      ry="5"
+    />
+    <rect
+      x="35.5%"
+      y="25%"
+      width="1%"
+      height="62.7%"
+      fill="#00F2DE"
+      rx="5"
+      ry="5"
+    />
+    <rect
+      x="35.5%"
+      y="55%"
+      width="1%"
+      height="33%"
+      fill="#FB4540"
+      rx="5"
+      ry="5"
+    />
+    <rect
+      x="50.5%"
+      y="15%"
+      width="1%"
+      height="73%"
+      fill="#00F2DE"
+      rx="5"
+      ry="5"
+    />
+    <rect
+      x="50.5%"
+      y="50%"
+      width="1%"
+      height="38%"
+      fill="#FB4540"
+      rx="5"
+      ry="5"
+    />
+    <rect
+      x="65.5%"
+      y="15%"
+      width="1%"
+      height="73%"
+      fill="#00F2DE"
+      rx="5"
+      ry="5"
+    />
+    <rect
+      x="65.5%"
+      y="45%"
+      width="1%"
+      height="43%"
+      fill="#FB4540"
+      rx="5"
+      ry="5"
+    />
+    <rect
+      x="80.5%"
+      y="25%"
+      width="1%"
+      height="62.7%"
+      fill="#00F2DE"
+      rx="5"
+      ry="5"
+    />
+    <rect
+      x="80.5%"
+      y="50%"
+      width="1%"
+      height="38%"
+      fill="#FB4540"
+      rx="5"
+      ry="5"
+    />
+    <rect
+      x="95.5%"
+      y="46%"
+      width="1%"
+      height="42%"
+      fill="#00F2DE"
+      rx="5"
+      ry="5"
+    />
+    <rect
+      x="95.5%"
+      y="65%"
+      width="1%"
+      height="23%"
+      fill="#FB4540"
+      rx="5"
+      ry="5"
+    />
 
-    <text x="1%" y="5%" fontFamily="Arial" fontSize="5%" fill="#AEBBDA">
+    <text x="1%" y="5%" fontFamily="Arial" fontSize="10" fill="#AEBBDA">
       $3k
     </text>
-    <text x="1%" y="30%" fontFamily="Arial" fontSize="5%" fill="#AEBBDA">
+    <text x="1%" y="35%" fontFamily="Arial" fontSize="10" fill="#AEBBDA">
       $2k
     </text>
-    <text x="1%" y="55%" fontFamily="Arial" fontSize="5%" fill="#AEBBDA">
+    <text x="1%" y="63%" fontFamily="Arial" fontSize="10" fill="#AEBBDA">
       $1k
     </text>
-    <text x="1%" y="80%" fontFamily="Arial" fontSize="5%" fill="#AEBBDA">
+    <text x="1%" y="90%" fontFamily="Arial" fontSize="10" fill="#AEBBDA">
       0
     </text>
 
-    <text x="4.5%" y="95%" fontFamily="Arial" fontSize="5%" fill="#AEBBDA">
+    <text x="4.5%" y="98%" fontFamily="Arial" fontSize="10" fill="#AEBBDA">
       Mo
     </text>
-    <text x="10.5%" y="95%" fontFamily="Arial" fontSize="5%" fill="#AEBBDA">
+    <text x="19.5%" y="98%" fontFamily="Arial" fontSize="10" fill="#AEBBDA">
       Tu
     </text>
-    <text x="16.5%" y="95%" fontFamily="Arial" fontSize="5%" fill="#AEBBDA">
+    <text x="34.5%" y="98%" fontFamily="Arial" fontSize="10" fill="#AEBBDA">
       We
     </text>
-    <text x="22.5%" y="95%" fontFamily="Arial" fontSize="5%" fill="#AEBBDA">
+    <text x="49.5%" y="98%" fontFamily="Arial" fontSize="10" fill="#AEBBDA">
       Th
     </text>
-    <text x="28.5%" y="95%" fontFamily="Arial" fontSize="5%" fill="#AEBBDA">
+    <text x="64.5%" y="98%" fontFamily="Arial" fontSize="10" fill="#AEBBDA">
       Fr
     </text>
-    <text x="34.5%" y="95%" fontFamily="Arial" fontSize="5%" fill="#AEBBDA">
+    <text x="79.5%" y="98%" fontFamily="Arial" fontSize="10" fill="#AEBBDA">
       Sa
     </text>
-    <text x="40.5%" y="95%" fontFamily="Arial" fontSize="5%" fill="#AEBBDA">
-      Su
+    <text x="94.5%" y="98%" fontFamily="Arial" fontSize="10" fill="#AEBBDA">
+      S8
     </text>
   </svg>
 );
