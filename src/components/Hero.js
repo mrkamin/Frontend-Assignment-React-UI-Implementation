@@ -1,36 +1,52 @@
+// Import necessary React libraries and components
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import {
   BsFillArrowDownLeftSquareFill,
   BsFillArrowUpRightSquareFill,
 } from 'react-icons/bs';
+
+// Import the fetchData action and SVG component
 import { fetchData } from '../redux/data/actions';
 import IMG from '../assets/Group.png';
 import IMG1 from '../assets/Group2.png';
 import '../css/hero.css';
 import Svg from './Svg';
 
+// Define the Hero component
 const Hero = () => {
+  // Initialize the Redux useDispatch and useSelector hooks
   const dispatch = useDispatch();
   const { data, loading, error } = useSelector((state) => state);
+
+  // useEffect to dispatch fetchData action when component mounts
   useEffect(() => {
     dispatch(fetchData());
   }, [dispatch]);
+
+  // Render loading state while fetching data
   if (loading) {
-    return <div>Loading...</div>;
+    return <div className="loading">Loading...</div>;
   }
+
+  // Render error message if there's an error fetching data
   if (error) {
     return (
-      <div>
+      <div className="loading">
         Error:
         {error}
       </div>
     );
   }
+
+  // Render the main content of the Hero component
   return (
     <>
+      {/* Hero container with left and right sides */}
       <div className=" hero-container grid">
+        {/* Left side of the hero container */}
         <div className="hero-container-left-side d-flex flex-column">
+          {/* Total Visits */}
           <div className="total-visits d-flex">
             <div className="total-visits-first-item d-flex">
               <BsFillArrowDownLeftSquareFill className="total-visit-first-item-item-one" />
@@ -41,6 +57,8 @@ const Hero = () => {
             </div>
             <p className="total-visits-second-item">+1.29%</p>
           </div>
+
+          {/* Total Subscribers */}
           <div className="total-visits d-flex">
             <div className="total-visits-first-item d-flex">
               <BsFillArrowUpRightSquareFill className="total-sub-first-item-item-one" />
@@ -51,6 +69,8 @@ const Hero = () => {
             </div>
             <p className="total-sub-second-item">+1.29%</p>
           </div>
+
+          {/* Active Users */}
           <div className="total-visits d-flex">
             <div className="total-visits-first-item d-flex">
               <img
@@ -65,6 +85,8 @@ const Hero = () => {
             </div>
             <p className="Active-second-item" />
           </div>
+
+          {/* Total Clicks */}
           <div className="total-visits d-flex">
             <div className="total-visits-first-item d-flex">
               <img
@@ -80,24 +102,48 @@ const Hero = () => {
             <p className="Active-second-item" />
           </div>
         </div>
+
+        {/* Right side of the hero container */}
         <div className="hero-container-right-side d-flex flex-column">
+          {/* Upper header section */}
           <div className="right-side-uper-head d-flex">
             <div className="uper-head-right-side">
               <h4>User Traffic</h4>
             </div>
+            {/* Legend items for user sign up and user subscribed */}
             <div className="uper-head-left-side d-flex">
               <div className="left-side-first-item d-flex">
-                <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" className="">
-                  <path d="M 0 0 L 20 0 L 20 20 L 0 20 Z" stroke="black" fill="#0082CC" />
+                <svg
+                  width="20"
+                  height="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className=""
+                >
+                  <path
+                    d="M 0 0 L 20 0 L 20 20 L 0 20 Z"
+                    stroke="black"
+                    fill="#0082CC"
+                  />
                 </svg>
                 <div className="white-dark">User Sign Up</div>
               </div>
               <div className="left-side-first-item d-flex">
-                <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" className="">
-                  <path d="M 0 0 L 20 0 L 20 20 L 0 20 Z" stroke="black" fill="#FB4540" />
+                <svg
+                  width="20"
+                  height="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className=""
+                >
+                  <path
+                    d="M 0 0 L 20 0 L 20 20 L 0 20 Z"
+                    stroke="black"
+                    fill="#FB4540"
+                  />
                 </svg>
                 <div className="white-dark">User Subscribed</div>
               </div>
+
+              {/* Dropdown for selecting the current year */}
               <div className="left-side-third-item">
                 <select className="drop-down btn">
                   <option value="apple">Current Year</option>
@@ -107,6 +153,8 @@ const Hero = () => {
               </div>
             </div>
           </div>
+
+          {/* Body section with SVG visualization */}
           <div className="right-side-body">
             <Svg data={data} />
           </div>
@@ -116,4 +164,5 @@ const Hero = () => {
   );
 };
 
+// Export the Hero component as the default export
 export default Hero;
