@@ -47,11 +47,18 @@ body {
 
 /* Styling for SVG elements */
 .svg {
-  height: 30vh !important;
+  height: 300px !important;
+  width: 99.5%;
+}
+
+.right-side-body {
+  height: 400px !important;
+  width: 100%;
 }
 
 /* Styling for the footer */
 .footer {
+  height: 410px;
   padding: 16px 32px;
   gap: 16px;
 }
@@ -133,4 +140,25 @@ body {
   width: 100%;
   position: absolute;
   top: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .grid1 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .hero-container-left-side {
+    position: absolute !important;
+    top: 818px;
+    right: 25px;
+    width: 46.5%;
+    background-color: #181a3b83;
+    padding: 20px 10px;
+    box-shadow: -3px -3px 0 0 #1d2b4b;
+    border: none;
+    border-radius: 1rem;
+    overflow: hidden;
+  }
 }
