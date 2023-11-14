@@ -61,6 +61,7 @@ body {
   height: 410px;
   padding: 16px 32px;
   gap: 16px;
+  width: 100%;
 }
 
 /* Styling for elements with class 'label' */
@@ -151,19 +152,27 @@ body {
   }
   .hero-container-left-side {
     position: absolute !important;
-    top: 818px;
+    top: 954px;
     right: 25px;
     width: 46.5%;
     background-color: #181a3b83;
-    padding: 20px 10px;
+    padding: 5px 10px;
     box-shadow: -3px -3px 0 0 #1d2b4b;
     border: none;
     border-radius: 1rem;
     overflow: hidden;
   }
-  
 }
-
+@media screen and (max-width: 920px) {
+  .grid1 {
+    grid-template-columns: 1fr;
+  }
+  .hero-container-left-side {
+    top: 1800px;
+    right: 25px;
+    width: 90%;
+  }
+}
 @media screen and (max-width: 786px) {
   .svg {
     height: 280px !important;
