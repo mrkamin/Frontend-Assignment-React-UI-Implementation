@@ -104,7 +104,7 @@ const Hero = () => {
         </div>
 
         {/* Right side of the hero container */}
-        <div className="hero-container-right-side d-flex flex-column gap-4">
+        <div className="hero-container-right-side d-flex flex-column gap-2">
           {/* Upper header section */}
           <div className="right-side-uper-head d-flex">
             <div className="uper-head-right-side">
@@ -112,35 +112,37 @@ const Hero = () => {
             </div>
             {/* Legend items for user sign up and user subscribed */}
             <div className="uper-head-left-side d-flex">
-              <div className="left-side-first-item d-flex">
-                <svg
-                  width="20"
-                  height="20"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className=""
-                >
-                  <path
-                    d="M 0 0 L 20 0 Q 20 0 20 20 L 20 20 L 0 20 Z"
-                    stroke="black"
-                    fill="#0082CC"
-                  />
-                </svg>
-                <div className="white-dark">User Sign Up</div>
-              </div>
-              <div className="left-side-first-item d-flex">
-                <svg
-                  width="20"
-                  height="20"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className=""
-                >
-                  <path
-                    d="M 0 0 L 20 0 Q 20 0 20 20 L 20 20 L 0 20 Z"
-                    stroke="black"
-                    fill="#FB4540"
-                  />
-                </svg>
-                <div className="white-dark">User Subscribed</div>
+              <div className="uper-head-left-side-ref d-flex gap-5">
+                <div className="left-side-first-item d-flex">
+                  <svg
+                    width="20"
+                    height="20"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className=""
+                  >
+                    <path
+                      d="M 0 0 L 20 0 Q 20 0 20 20 L 20 20 L 0 20 Z"
+                      stroke="black"
+                      fill="#0082CC"
+                    />
+                  </svg>
+                  <div className="white-dark">User Sign Up</div>
+                </div>
+                <div className="left-side-first-item d-flex">
+                  <svg
+                    width="20"
+                    height="20"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className=""
+                  >
+                    <path
+                      d="M 0 0 L 20 0 Q 20 0 20 20 L 20 20 L 0 20 Z"
+                      stroke="black"
+                      fill="#FB4540"
+                    />
+                  </svg>
+                  <div className="white-dark">User Subscribed</div>
+                </div>
               </div>
 
               {/* Dropdown for selecting the current year */}

@@ -119,6 +119,7 @@
 .right-side-uper-head {
   justify-content: space-between;
   width: 100%;
+  align-items: center;
 }
 
 .uper-head-left-side {
@@ -133,4 +134,27 @@
 /* Style for the legend items and dropdown */
 .right-side-body {
   width: 100%;
+}
+
+@media screen and (max-width: 786px) {
+  .right-side-uper-head {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .uper-head-left-side {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .hero-container-right-side {
+    gap: 0;
+  }
+  .uper-head-left-side-ref {
+    flex-direction: column;
+    gap: 5px !important;
+  }
 }
