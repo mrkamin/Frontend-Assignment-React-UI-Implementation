@@ -13,7 +13,7 @@ const Navbar = () => (
       </div>
 
       {/* Right side of the navbar with a dropdown */}
-      <div>
+      <div className="p-2">
         {/* Dropdown for selecting user type */}
         <select className="drop-down btn">
           <option value="apple">User</option>
