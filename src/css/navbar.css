@@ -1,26 +1,27 @@
 :root {
-    --sub-title-color: #AEBBDA;
-  }
-.navbar-title h1{
-    background-image: linear-gradient(to bottom, #F6F6F7, #7E808F );
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
+  --sub-title-color: #aebbda;
+}
+
+.navbar-title h1 {
+  background-image: linear-gradient(to bottom, #f6f6f7, #7e808f);
+  color: transparent;
+  -webkit-background-clip: text;
 }
 
 .navbar {
-    padding: 16px 32px;
+  padding: 16px 32px;
 }
+
 .navbar-title p {
-    color: #AEBBDA;
+  color: #aebbda;
 }
 
 .drop-down {
-    color: #8F9BB7;
-    border: 3px solid #20053F;
+  color: #8f9bb7;
+  border: 3px solid #20053f;
 }
 
 .drop-down:hover {
-    background-color: #060B27;
-    color: #8F9BB7;
+  background-color: #060b27;
+  color: #8f9bb7;
 }

@@ -1,30 +1,33 @@
+/* Import Google Font Poppins with different weights */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
+/* Define global CSS variables */
 :root {
-  --bg-color: #060B27;
-  --linear: #2F014C;
-  --total-visit-color: #3F46F7;
+  --bg-color: #060b27;
+  --linear: #2f014c;
+  --total-visit-color: #3f46f7;
   --total-sub-color: #fe8743;
   --active-user-color: #00c543;
   --total-click-color: #8923d9;
   --ff: "Poppins";
 }
 
+/* Reset default styles for all elements */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+/* Styling for the body element */
 body {
   font-family: var(--ff);
-  background-image: linear-gradient(to right, #060B27, #2F014C );
-  color: transparent;
-  background-clip: text;
+  background-image: linear-gradient(to right, #060b27, #2f014c);
   -webkit-background-clip: text;
   color: #fff;
 }
 
+/* Define grid styles for layout */
 .grid {
   display: grid;
   grid-template-columns: 20% 78%;
@@ -42,26 +45,31 @@ body {
   align-items: center;
 }
 
+/* Styling for SVG elements */
 .svg {
   height: 30vh !important;
 }
 
+/* Styling for the footer */
 .footer {
-  padding: 16px 32px ;
+  padding: 16px 32px;
   gap: 16px;
 }
 
+/* Styling for elements with class 'label' */
 .label {
   z-index: 10;
   top: 0;
 }
 
+/* Styling for elements with class 'white-dark' */
 .white-dark {
-  color: #AEBBDA !important;
+  color: #aebbda !important;
 }
 
+/* Styling for elements with class 'paragraph' */
 .paragraph {
-  background-color: #290C51;
+  background-color: #290c51;
   align-items: center !important;
   gap: 1rem;
   border: none;
@@ -70,26 +78,31 @@ body {
   padding: 0.1rem;
 }
 
+/* Styling for elements with class 'active' */
 .active {
-  background-color:#060b2760 ;
+  background-color: #060b2760;
   border-radius: 0.3rem;
 }
 
+/* Styling for elements with class 'p' */
 .p {
   padding: 0.5rem;
   margin: 0 !important;
 }
 
+/* Styling for elements with class 'mark' */
 .mark {
   background-color: #00c543;
   border-radius: 0.2rem;
 }
+
 .mark polyline {
   stroke: #fff;
 }
 
+/* Styling for elements with class 'mark1' */
 .mark1 {
-  background-color: #3F46F7;
+  background-color: #3f46f7;
   border-radius: 0.2rem;
 }
 
@@ -97,6 +110,7 @@ body {
   stroke: #fff;
 }
 
+/* Styling for elements with class 'mark-contaiener' */
 .mark-contaiener {
   border: none;
   border-radius: 0.5rem;
