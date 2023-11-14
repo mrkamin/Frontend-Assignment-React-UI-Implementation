@@ -39,7 +39,7 @@ export const SvgConverrsionRate = ({
         cy="50"
         r="40"
         fill="none"
-        stroke="#3F46F7"
+        stroke="#5E5CE6"
         strokeWidth="8"
         strokeDasharray={`${signUpPercentage * 4.5} ${360 - signUpPercentage * 4.5}`}
       />
@@ -50,7 +50,7 @@ export const SvgConverrsionRate = ({
         cy="50"
         r="40"
         fill="none"
-        stroke="#5E5CE6"
+        stroke="#3F46F7"
         strokeWidth="8"
         strokeDasharray={`${subscribedPercentage * 4.5} ${360 - subscribedPercentage * 4.5}`}
       />

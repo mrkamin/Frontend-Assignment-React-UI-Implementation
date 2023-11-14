@@ -1,9 +1,6 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import {
-  BsFillArrowDownLeftSquareFill,
-  BsFillArrowUpRightSquareFill,
-} from 'react-icons/bs';
+import { GrFormCheckmark } from 'react-icons/gr';
 import { fetchData } from '../redux/data/actions';
 import SvgWebSiteAnalytics from './SvgWebSiteAnalytics';
 
@@ -37,12 +34,12 @@ const WebsiteAnalytics = () => {
           </div>
         </div>
         <div className="d-flex gap-5">
-          <div className="total-visits-first-item d-flex">
-            <BsFillArrowDownLeftSquareFill className="" />
-            <p>Visits</p>
+          <div className="d-flex gap-3 ">
+            <GrFormCheckmark className="mark mark-contaiener" />
+            <p className="">Visits</p>
           </div>
-          <div className="total-visits-first-item d-flex">
-            <BsFillArrowUpRightSquareFill className="" />
+          <div className="d-flex gap-3">
+            <GrFormCheckmark className="mark1 mark-contaiener" />
             <p>Sessions</p>
           </div>
         </div>

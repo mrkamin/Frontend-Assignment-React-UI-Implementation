@@ -83,16 +83,16 @@ const SvgWebSiteAnalytics = ({ data }) => {
         );
       })}
 
-      <text x="10%" y="98%" fontFamily="Arial" fontSize="5%" fill="#AEBBDA">
+      <text x="10%" y="98%" fontFamily="Arial" fontSize="3%" fill="#AEBBDA">
         Jan
       </text>
-      <text x="37%" y="98%" fontFamily="Arial" fontSize="5%" fill="#AEBBDA">
+      <text x="37%" y="98%" fontFamily="Arial" fontSize="3%" fill="#AEBBDA">
         Feb
       </text>
-      <text x="62%" y="98%" fontFamily="Arial" fontSize="5%" fill="#AEBBDA">
+      <text x="62%" y="98%" fontFamily="Arial" fontSize="3%" fill="#AEBBDA">
         Mar
       </text>
-      <text x="90%" y="98%" fontFamily="Arial" fontSize="5%" fill="#AEBBDA">
+      <text x="90%" y="98%" fontFamily="Arial" fontSize="3%" fill="#AEBBDA">
         Apr
       </text>
       <line

@@ -79,3 +79,28 @@ body {
   padding: 0.5rem;
   margin: 0 !important;
 }
+
+.mark {
+  background-color: #00c543;
+  border-radius: 0.2rem;
+}
+.mark polyline {
+  stroke: #fff;
+}
+
+.mark1 {
+  background-color: #3F46F7;
+  border-radius: 0.2rem;
+}
+
+.mark1 polyline {
+  stroke: #fff;
+}
+
+.mark-contaiener {
+  border: none;
+  border-radius: 0.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  overflow: visible;
+}
