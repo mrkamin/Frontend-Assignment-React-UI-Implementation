@@ -47,18 +47,18 @@ body {
 
 /* Styling for SVG elements */
 .svg {
-  height: 300px !important;
+  height: 320px !important;
   width: 99.5%;
 }
 
 .right-side-body {
-  height: 400px !important;
+  height: 390px !important;
   width: 100%;
 }
 
 /* Styling for the footer */
 .footer {
-  height: 410px;
+  height: 390px !important;
   padding: 16px 32px;
   gap: 16px;
   width: 100%;

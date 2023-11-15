@@ -2,7 +2,7 @@
 .hero-container {
   padding: 0 2%;
   gap: 32px;
-  height: 410px;
+  height: 400px;
 }
 
 /* Style for the left side of the hero container */
@@ -15,7 +15,7 @@
   background-color: #181a3b86;
   align-items: baseline;
   justify-content: space-between;
-  padding: 15px 20px;
+  padding: 14px 20px;
   box-shadow: -3px -3px 0 0 #1d2b4b;
   border: none;
   border-radius: 1rem;
@@ -114,7 +114,7 @@
   border: none;
   border-radius: 1rem;
   overflow: hidden;
-  height: 410px;
+  height: 400px;
 }
 
 .right-side-uper-head {
