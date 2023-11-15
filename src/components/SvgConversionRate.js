@@ -1,9 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+// SvgConverrsionRate component
 export const SvgConverrsionRate = ({
   userVisit, userSignUp, userSubscribed, label,
 }) => {
+  // Calculate total to determine percentages
   const total = userVisit + userSignUp + userSubscribed;
 
   // Calculate percentage for each section of the circle
@@ -62,11 +64,15 @@ export const SvgConverrsionRate = ({
     </svg>
   );
 };
+
+// SvgConverrsionRate1 component
 export const SvgConverrsionRate1 = () => (
   <svg width="52" height="20" xmlns="http://www.w3.org/2000/svg" className="">
     <line x1="0" y1="10" x2="50" y2="10" stroke="#00F2DE" strokeWidth="10" />
   </svg>
 );
+
+// SvgConverrsionRate2 component
 export const SvgConverrsionRate2 = () => (
   <svg width="52" height="20" xmlns="http://www.w3.org/2000/svg" className="">
     <line
@@ -80,6 +86,8 @@ export const SvgConverrsionRate2 = () => (
     />
   </svg>
 );
+
+// SvgConverrsionRate3 component
 export const SvgConverrsionRate3 = () => (
   <svg width="52" height="20" xmlns="http://www.w3.org/2000/svg" className="">
     <line
@@ -94,6 +102,7 @@ export const SvgConverrsionRate3 = () => (
   </svg>
 );
 
+// PropTypes for SvgConverrsionRate
 SvgConverrsionRate.propTypes = {
   userVisit: PropTypes.number.isRequired,
   userSignUp: PropTypes.number.isRequired,
