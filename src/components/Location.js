@@ -1,7 +1,11 @@
+// Import React library
 import React from 'react';
+// Import the SvgLocation component
 import SvgLocation from './SvgLocation';
 
+// Define the Location component
 const Location = () => (
+  // Render a div with the classes "hero-container-right-side" and "d-flex flex-column"
   <div className="hero-container-right-side d-flex flex-column">
     <div className="right-side-uper-head d-flex">
       <div className="uper-head-right-side">
@@ -38,4 +42,5 @@ const Location = () => (
   </div>
 );
 
+// Export the Location component
 export default Location;
