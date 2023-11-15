@@ -154,6 +154,7 @@
   .hero-container-right-side {
     gap: 0;
   }
+
   .uper-head-left-side-ref {
     flex-direction: column;
     gap: 5px !important;

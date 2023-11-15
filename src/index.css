@@ -152,6 +152,7 @@ body {
     display: flex;
     flex-direction: column-reverse;
   }
+
   .grid1 {
     grid-template-columns: 1fr 1fr;
   }
@@ -160,11 +161,13 @@ body {
     height: 800px !important;
   }
 }
+
 @media screen and (max-width: 920px) {
   .grid1 {
     grid-template-columns: 1fr;
   }
 }
+
 @media screen and (max-width: 786px) {
   .svg {
     height: 280px !important;
@@ -174,11 +177,13 @@ body {
   .website-analytics {
     flex-direction: row !important;
   }
+
   .footer {
     padding: 16px 8px;
     gap: 16px;
     width: 100%;
   }
+
   .svg1 {
     height: 220px !important;
     width: 98%;
@@ -186,7 +191,6 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-
   .footer {
     padding: 16px 8px;
     gap: 16px;
@@ -206,6 +210,7 @@ body {
     height: 220px !important;
     width: 98%;
   }
+
   .svg2 {
     height: 280px;
     width: 100%;

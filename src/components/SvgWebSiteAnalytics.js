@@ -1,16 +1,26 @@
+// Import PropTypes for defining prop types
 import PropTypes from 'prop-types';
 
+// Define the SvgWebSiteAnalytics component with data as a prop
 const SvgWebSiteAnalytics = ({ data }) => {
+  // If data or data.webSiteAnalytics is not available, return null
   if (!data || !data.webSiteAnalytics) {
     return null;
   }
+
+  // Extract months from the data object
   const months = Object.keys(data.webSiteAnalytics);
+
+  // Function to calculate X coordinate based on index
   const calculateXcoordinate = (index) => `${index * 25 + 8}%`;
 
+  // Function to calculate Y coordinate based on a percentage value
   const calculateYCoordinate = (value) => {
     const percentage = (value / 100) * 100;
     return `${percentage}`;
   };
+
+  // Render an SVG element
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
