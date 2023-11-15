@@ -23,7 +23,7 @@ export const fetchData = () => (dispatch) => {
 
   // Make an HTTP GET request using Axios
   axios
-    .get('https://mocki.io/v1/cfda4fde-0e85-4985-9446-9236faff71d7')
+    .get('https://mocki.io/v1/af874dff-07c1-498a-9b63-d455f8b62eda')
     .then((response) => {
       // Dispatch success action with the received data
       dispatch(fetchDataSuccess(response.data.data));
