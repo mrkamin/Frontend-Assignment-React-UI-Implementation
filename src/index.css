@@ -4,11 +4,6 @@
 /* Define global CSS variables */
 :root {
   --bg-color: #060b27;
-  --linear: #2f014c;
-  --total-visit-color: #3f46f7;
-  --total-sub-color: #fe8743;
-  --active-user-color: #00c543;
-  --total-click-color: #8923d9;
   --ff: "Poppins";
 }
 
@@ -30,7 +25,7 @@ body {
 /* Define grid styles for layout */
 .grid {
   display: grid;
-  grid-template-columns: 25% 74%;
+  grid-template-columns: 25% 75%;
 }
 
 .grid1 {
@@ -51,6 +46,16 @@ body {
   width: 99.5%;
 }
 
+.svg1 {
+  height: 250px !important;
+  width: 99.5%;
+}
+
+.svg2 {
+  height: 320px;
+  width: 100%;
+}
+
 .right-side-body {
   height: 390px !important;
   width: 100%;
@@ -58,7 +63,6 @@ body {
 
 /* Styling for the footer */
 .footer {
-  height: 390px !important;
   padding: 16px 32px;
   gap: 16px;
   width: 100%;
@@ -145,32 +149,20 @@ body {
 
 @media screen and (max-width: 1200px) {
   .grid {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column-reverse;
   }
   .grid1 {
     grid-template-columns: 1fr 1fr;
   }
-  .hero-container-left-side {
-    position: absolute !important;
-    top: 954px;
-    right: 25px;
-    width: 46.5%;
-    background-color: #181a3b83;
-    padding: 5px 10px;
-    box-shadow: -3px -3px 0 0 #1d2b4b;
-    border: none;
-    border-radius: 1rem;
-    overflow: hidden;
+
+  .hero-container {
+    height: 800px !important;
   }
 }
 @media screen and (max-width: 920px) {
   .grid1 {
     grid-template-columns: 1fr;
-  }
-  .hero-container-left-side {
-    top: 1800px;
-    right: 25px;
-    width: 90%;
   }
 }
 @media screen and (max-width: 786px) {
@@ -178,11 +170,44 @@ body {
     height: 280px !important;
     width: 99.5%;
   }
+
+  .website-analytics {
+    flex-direction: row !important;
+  }
+  .footer {
+    padding: 16px 8px;
+    gap: 16px;
+    width: 100%;
+  }
+  .svg1 {
+    height: 220px !important;
+    width: 98%;
+  }
 }
 
 @media screen and (max-width: 600px) {
+
+  .footer {
+    padding: 16px 8px;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .website-analytics {
+    flex-direction: row !important;
+  }
+
   .svg {
-    height: 250px !important;
-    width: 99.5%;
+    height: 230px !important;
+    width: 100%;
+  }
+
+  .svg1 {
+    height: 220px !important;
+    width: 98%;
+  }
+  .svg2 {
+    height: 280px;
+    width: 100%;
   }
 }

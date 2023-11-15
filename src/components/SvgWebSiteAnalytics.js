@@ -5,7 +5,7 @@ const SvgWebSiteAnalytics = ({ data }) => {
     return null;
   }
   const months = Object.keys(data.webSiteAnalytics);
-  const calculateXcoordinate = (index) => `${index * 25 + 2}%`;
+  const calculateXcoordinate = (index) => `${index * 25 + 8}%`;
 
   const calculateYCoordinate = (value) => {
     const percentage = (value / 100) * 100;
@@ -14,8 +14,7 @@ const SvgWebSiteAnalytics = ({ data }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className="svg"
-      viewBox="0 0 20 10"
+      className="svg1"
     >
       { months.map((month, index) => {
         const height = calculateYCoordinate(data.webSiteAnalytics[month].visits);
@@ -24,7 +23,7 @@ const SvgWebSiteAnalytics = ({ data }) => {
             key={`userSignUp-${month}`}
             cx={calculateXcoordinate(index)}
             cy={`${46 + +height}%`}
-            r="0.2"
+            r="5"
             fill="#8EF27E"
           />
         );
@@ -37,7 +36,7 @@ const SvgWebSiteAnalytics = ({ data }) => {
             key={`userSubscribed-${month}`}
             cx={calculateXcoordinate(index)}
             cy={`${46 + +height}%`}
-            r="0.2"
+            r="5"
             fill="#2B3FF2"
           />
         );
@@ -56,7 +55,7 @@ const SvgWebSiteAnalytics = ({ data }) => {
             x2={calculateXcoordinate(index + 1)}
             y2={`${46 + +nextHeight}%`}
             stroke="#8EF27E"
-            strokeWidth="0.08"
+            strokeWidth="1"
             opacity="1"
           />
         );
@@ -77,22 +76,22 @@ const SvgWebSiteAnalytics = ({ data }) => {
             x2={calculateXcoordinate(index + 1)}
             y2={`${46 + +nextHeight}%`}
             stroke="#2B3FF2"
-            strokeWidth="0.08"
+            strokeWidth="1"
             opacity="1"
           />
         );
       })}
 
-      <text x="10%" y="98%" fontFamily="Arial" fontSize="3%" fill="#AEBBDA">
+      <text x="10%" y="100%" fontFamily="Arial" fontSize="10" fill="#AEBBDA">
         Jan
       </text>
-      <text x="37%" y="98%" fontFamily="Arial" fontSize="3%" fill="#AEBBDA">
+      <text x="37%" y="100%" fontFamily="Arial" fontSize="10" fill="#AEBBDA">
         Feb
       </text>
-      <text x="62%" y="98%" fontFamily="Arial" fontSize="3%" fill="#AEBBDA">
+      <text x="62%" y="100%" fontFamily="Arial" fontSize="10" fill="#AEBBDA">
         Mar
       </text>
-      <text x="90%" y="98%" fontFamily="Arial" fontSize="3%" fill="#AEBBDA">
+      <text x="90%" y="100%" fontFamily="Arial" fontSize="10" fill="#AEBBDA">
         Apr
       </text>
       <line
@@ -101,8 +100,8 @@ const SvgWebSiteAnalytics = ({ data }) => {
         x2="100%"
         y2="5%"
         stroke="#AEBBDA"
-        strokeDasharray="0.1"
-        strokeWidth="0.02"
+        strokeDasharray="5"
+        strokeWidth="0.5"
       />
       <line
         x1="1%"
@@ -110,8 +109,8 @@ const SvgWebSiteAnalytics = ({ data }) => {
         x2="100%"
         y2="19%"
         stroke="#AEBBDA"
-        strokeDasharray="0.1"
-        strokeWidth="0.02"
+        strokeDasharray="05"
+        strokeWidth="0.5"
       />
       <line
         x1="1%"
@@ -119,8 +118,8 @@ const SvgWebSiteAnalytics = ({ data }) => {
         x2="100%"
         y2="33%"
         stroke="#AEBBDA"
-        strokeDasharray="0.1"
-        strokeWidth="0.02"
+        strokeDasharray="5"
+        strokeWidth="0.5"
       />
       <line
         x1="1%"
@@ -128,8 +127,8 @@ const SvgWebSiteAnalytics = ({ data }) => {
         x2="100%"
         y2="46%"
         stroke="#AEBBDA"
-        strokeDasharray="0.1"
-        strokeWidth="0.02"
+        strokeDasharray="5"
+        strokeWidth="0.5"
       />
       <line
         x1="1%"
@@ -137,8 +136,8 @@ const SvgWebSiteAnalytics = ({ data }) => {
         x2="100%"
         y2="60%"
         stroke="#AEBBDA"
-        strokeDasharray="0.1"
-        strokeWidth="0.02"
+        strokeDasharray="5"
+        strokeWidth="0.5"
       />
       <line
         x1="1%"
@@ -146,8 +145,8 @@ const SvgWebSiteAnalytics = ({ data }) => {
         x2="100%"
         y2="74%"
         stroke="#AEBBDA"
-        strokeDasharray="0.1"
-        strokeWidth="0.02"
+        strokeDasharray="5"
+        strokeWidth="0.5"
       />
       <line
         x1="1%"
@@ -155,7 +154,7 @@ const SvgWebSiteAnalytics = ({ data }) => {
         x2="100%"
         y2="88%"
         stroke="#AEBBDA"
-        strokeWidth="0.02"
+        strokeWidth="0.5"
       />
       <line
         x1="1%"
@@ -163,7 +162,7 @@ const SvgWebSiteAnalytics = ({ data }) => {
         x2="1%"
         y2="88%"
         stroke="#AEBBDA"
-        strokeWidth="0.02"
+        strokeWidth="0.5"
       />
       <line
         x1="100%"
@@ -171,8 +170,8 @@ const SvgWebSiteAnalytics = ({ data }) => {
         x2="100%"
         y2="88%"
         stroke="#AEBBDA"
-        strokeWidth="0.02"
-        strokeDasharray="0.1"
+        strokeWidth="0.5"
+        strokeDasharray="5"
       />
     </svg>
   );

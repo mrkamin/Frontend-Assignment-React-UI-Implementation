@@ -4,7 +4,7 @@ import React from 'react';
 const SvgLocation = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    className="svg"
+    className="svg2"
   >
 
     {/* Vertical lines */}

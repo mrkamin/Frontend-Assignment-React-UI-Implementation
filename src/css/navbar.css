@@ -21,9 +21,3 @@
   color: #8f9bb7; /* Set the default text color */
   border: 3px solid #20053f; /* Add a border to the dropdown */
 }
-
-@media screen and (max-width: 600px) {
-  .navbar-title {
-    display: none !important;
-  }
-}

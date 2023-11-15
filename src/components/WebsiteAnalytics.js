@@ -33,7 +33,7 @@ const WebsiteAnalytics = () => {
             <p className="white-dark p">Yearly</p>
           </div>
         </div>
-        <div className="d-flex gap-5">
+        <div className="d-flex flex-column gap-1 website-analytics">
           <div className="d-flex gap-3 ">
             <GrFormCheckmark className="mark mark-contaiener" />
             <p className="">Visits</p>
