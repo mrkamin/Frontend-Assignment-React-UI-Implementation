@@ -1,0 +1,23 @@
+/* Style for the h1 element inside the navbar title */
+.navbar-title h1 {
+  /* Apply a gradient background to the text */
+  background-image: linear-gradient(to bottom, #f6f6f7, #7e808f);
+  color: transparent;
+  -webkit-background-clip: text; /* Clip text to the background gradient */
+}
+
+/* Style for the overall navbar */
+.navbar {
+  padding: 0.2% 2%; /* Add padding to the navbar */
+}
+
+/* Style for the paragraph element inside the navbar title */
+.navbar-title p {
+  color: #aebbda; /* Set the color for the subtitle */
+}
+
+/* Style for the dropdown select element */
+.drop-down {
+  color: #8f9bb7; /* Set the default text color */
+  border: 3px solid #20053f; /* Add a border to the dropdown */
+}

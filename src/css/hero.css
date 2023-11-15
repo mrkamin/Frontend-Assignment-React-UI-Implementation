@@ -1,0 +1,162 @@
+/* Style for the main hero container */
+.hero-container {
+  padding: 0 2%;
+  gap: 16px;
+  height: 400px;
+}
+
+/* Style for the left side of the hero container */
+.hero-container-left-side {
+  gap: 1rem;
+}
+
+/* Style for individual total visits elements */
+.total-visits {
+  background-color: #181a3b86;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 14.5px 20px;
+  box-shadow: -3px -3px 0 0 #1d2b4b;
+  border: none;
+  border-radius: 1rem;
+}
+
+.total-visits-first-item {
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0 !important;
+}
+
+/* Style for the arrow icon in the total visits */
+.total-visit-first-item-item-one {
+  background-color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+  overflow: visible;
+}
+
+.total-visit-first-item-item-one path {
+  color: #3f46f7;
+}
+
+.total-visit-first-item-item-two {
+  align-items: start;
+  padding: 0;
+  margin: 0;
+}
+
+.total-visit-first-item-item-two p {
+  padding: 0;
+  margin: 0;
+}
+
+.total-visit-first-item-item-two h3 {
+  padding: 0;
+  margin: 0;
+}
+
+.total-visits-second-item {
+  color: #00ca65;
+  background-color: #02b1592f;
+  padding: 0.2rem 1rem;
+  border: none;
+  border-radius: 1rem;
+  margin-bottom: 0 !important;
+}
+
+/* Style for the arrow icon in the total subscribers */
+.total-sub-first-item-item-one {
+  background-color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+  overflow: visible;
+}
+
+.total-sub-first-item-item-one path {
+  color: #fe8743;
+}
+
+.total-sub-second-item {
+  color: #e41414;
+  background-color: #e8001b25;
+  padding: 0.2rem 1rem;
+  border: none;
+  border-radius: 1rem;
+  margin-bottom: 0 !important;
+}
+
+/* Style for the active users and total clicks icons */
+.total-active-first-item-item-one,
+.total-click-first-item-item-one {
+  background-color: #00c543;
+  border: none;
+  border-radius: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+  overflow: visible;
+  padding: 0.3rem;
+}
+
+/* Style for the total clicks icon */
+.total-click-first-item-item-one {
+  background-color: #8923d9;
+}
+
+/* Style for the right side of the hero container */
+.hero-container-right-side {
+  background-color: #181a3b83;
+  padding: 10px 20px;
+  box-shadow: -3px -3px 0 0 #1d2b4b;
+  border: none;
+  border-radius: 1rem;
+  overflow: hidden;
+  height: 400px;
+}
+
+.right-side-uper-head {
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.uper-head-left-side {
+  gap: 32px;
+}
+
+.left-side-first-item {
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Style for the legend items and dropdown */
+.right-side-body {
+  width: 100%;
+}
+
+@media screen and (max-width: 786px) {
+  .right-side-uper-head {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .uper-head-left-side {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .hero-container-right-side {
+    gap: 0;
+  }
+
+  .uper-head-left-side-ref {
+    flex-direction: column;
+    gap: 5px !important;
+  }
+}

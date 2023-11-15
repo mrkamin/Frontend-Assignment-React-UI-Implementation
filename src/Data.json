@@ -1,0 +1,91 @@
+{
+  "data": {
+    "id": 1,
+    "totalVisits": 13456,
+    "totalSubscribers": 45612,
+    "activeUsers": 42147,
+    "totalClicks": 658972,
+    "label": 583,
+    "userVisit": 3154698,
+    "userSignUp": 1525468,
+    "userSubscribed": 948523,
+    "months": {
+      "Jan": {
+        "userSignUp": 40,
+        "userSubscribed": 30
+      },
+      "Feb": {
+        "userSignUp": 20,
+        "userSubscribed": 10
+      },
+      "Mar": {
+        "userSignUp": 35,
+        "userSubscribed": 10
+      },
+      "Apr": {
+        "userSignUp": -10,
+        "userSubscribed": -30
+      },
+      "May": {
+        "userSignUp": -20,
+        "userSubscribed": -30
+      },
+      "Jun": {
+        "userSignUp": 25,
+        "userSubscribed": 15
+      },
+      "Jul": {
+        "userSignUp": 30,
+        "userSubscribed": 9
+      },
+      "Aug": {
+        "userSignUp": -10,
+        "userSubscribed": -20
+      },
+      "Sep": {
+        "userSignUp": -12,
+        "userSubscribed": -22
+      },
+      "Oct": {
+        "userSignUp": 16,
+        "userSubscribed": 20
+      },
+      "Nev": {
+        "userSignUp": 40,
+        "userSubscribed": 30
+      },
+      "Dec": {
+        "userSignUp": -10,
+        "userSubscribed": -20
+      }
+    },
+    "location": {
+      "mo": { "contry": 50, "city": 200 },
+      "Tu": { "contry": 50, "city": 200 },
+      "We": { "contry": 50, "city": 200 },
+      "Th": { "contry": 50, "city": 200 },
+      "Fr": { "contry": 50, "city": 200 },
+      "Sa": { "contry": 50, "city": 200 },
+      "Su": { "contry": 50, "city": 200 }
+    },
+
+    "webSiteAnalytics": {
+      "Jan": {
+        "visits": 1,
+        "sessions": 20
+      },
+      "Feb": {
+        "visits": 5,
+        "sessions": 5
+      },
+      "Mar": {
+        "visits": -10,
+        "sessions": -20
+      },
+      "Apr": {
+        "visits": -20,
+        "sessions": -30
+      }
+    }
+  }
+}

@@ -1,13 +1,218 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Import Google Font Poppins with different weights */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+/* Define global CSS variables */
+:root {
+  --bg-color: #060b27;
+  --ff: "Poppins";
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Reset default styles for all elements */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Styling for the body element */
+body {
+  font-family: var(--ff);
+  background-image: linear-gradient(to right, #060b27, #2f014c);
+  -webkit-background-clip: text;
+  color: #fff;
+}
+
+/* Define grid styles for layout */
+.grid {
+  display: grid;
+  grid-template-columns: 25% 75%;
+}
+
+.grid1 {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 54% 44%;
+  gap: 1rem;
+  align-items: center;
+}
+
+/* Styling for SVG elements */
+.svg {
+  height: 320px !important;
+  width: 99.5%;
+}
+
+.svg1 {
+  height: 250px !important;
+  width: 99.5%;
+}
+
+.svg2 {
+  height: 320px;
+  width: 100%;
+}
+
+.right-side-body {
+  height: 390px !important;
+  width: 100%;
+}
+
+/* Styling for the footer */
+.footer {
+  padding: 16px 32px;
+  gap: 16px;
+  width: 100%;
+}
+
+/* Styling for elements with class 'label' */
+.label {
+  z-index: 10;
+  top: 0;
+}
+
+/* Styling for elements with class 'white-dark' */
+.white-dark {
+  color: #aebbda !important;
+}
+
+/* Styling for elements with class 'paragraph' */
+.paragraph {
+  background-color: #290c51;
+  align-items: center !important;
+  gap: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  justify-content: center;
+  padding: 0.1rem;
+}
+
+/* Styling for elements with class 'active' */
+.active {
+  background-color: #060b2760;
+  border-radius: 0.3rem;
+}
+
+/* Styling for elements with class 'p' */
+.p {
+  padding: 0.5rem;
+  margin: 0 !important;
+}
+
+/* Styling for elements with class 'mark' */
+.mark {
+  background-color: #00c543;
+  border-radius: 0.2rem;
+}
+
+.mark polyline {
+  stroke: #fff;
+}
+
+/* Styling for elements with class 'mark1' */
+.mark1 {
+  background-color: #3f46f7;
+  border-radius: 0.2rem;
+}
+
+.mark1 polyline {
+  stroke: #fff;
+}
+
+/* Styling for elements with class 'mark-contaiener' */
+.mark-contaiener {
+  border: none;
+  border-radius: 0.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  overflow: visible;
+}
+
+/* Add a loading style to the loading message */
+.loading {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #060b27;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .grid {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .grid1 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero-container {
+    height: 800px !important;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .grid1 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .svg {
+    height: 280px !important;
+    width: 99.5%;
+  }
+
+  .website-analytics {
+    flex-direction: row !important;
+  }
+
+  .footer {
+    padding: 16px 8px;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .svg1 {
+    height: 220px !important;
+    width: 98%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    padding: 16px 8px;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .website-analytics {
+    flex-direction: row !important;
+  }
+
+  .svg {
+    height: 230px !important;
+    width: 100%;
+  }
+
+  .svg1 {
+    height: 220px !important;
+    width: 98%;
+  }
+
+  .svg2 {
+    height: 280px;
+    width: 100%;
+  }
 }
