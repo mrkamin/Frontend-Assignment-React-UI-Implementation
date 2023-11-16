@@ -21,6 +21,11 @@
   border-radius: 1rem;
 }
 
+.total-visits:hover {
+  background-color: #181a3b0a;
+  border: 0.5px solid #5e5ce64f;
+}
+
 .total-visits-first-item {
   align-items: center;
   gap: 1rem;
@@ -115,6 +120,11 @@
   border-radius: 1rem;
   overflow: hidden;
   height: 400px;
+}
+
+.hero-container-right-side:hover {
+  background-color: #181a3b0a;
+  border: 0.5px solid #5e5ce64f;
 }
 
 .right-side-uper-head {

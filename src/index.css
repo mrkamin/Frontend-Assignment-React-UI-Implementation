@@ -46,6 +46,15 @@ body {
   width: 99.5%;
 }
 
+.svg rect {
+ overflow: hidden;
+}
+
+.svg rect:hover {
+  cursor: pointer;
+  max-zoom: 1;
+}
+
 .svg1 {
   height: 250px !important;
   width: 99.5%;
