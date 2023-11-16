@@ -314,7 +314,7 @@ const Svg = ({ data }) => {
             key={`userSignUp-${month}`}
             cx={calculateXcoordinate(index)}
             cy={`${46 + +height}%`}
-            r="5"
+            r="6"
             fill="#00F2DE"
           />
         );
@@ -328,7 +328,7 @@ const Svg = ({ data }) => {
             key={`userSubscribed-${month}`}
             cx={calculateXcoordinate(index)}
             cy={`${46 + +height}%`}
-            r="5"
+            r="6"
             fill="#FB4540"
           />
         );
